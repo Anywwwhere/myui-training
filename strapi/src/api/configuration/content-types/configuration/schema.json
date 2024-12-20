@@ -1,0 +1,91 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configuration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "logo_minimalist": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "reassurance_items": {
+      "displayName": "reassurance",
+      "type": "component",
+      "repeatable": true,
+      "component": "block.reassurance"
+    },
+    "buttons_default_background": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "buttons_default_text_color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "text_default_color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "heading_1_font_size": {
+      "type": "decimal"
+    },
+    "heading_2_font_size": {
+      "type": "decimal"
+    },
+    "heading_3_font_size": {
+      "type": "decimal"
+    },
+    "heading_4_font_size": {
+      "type": "decimal"
+    },
+    "heading_5_font_size": {
+      "type": "decimal"
+    },
+    "button_font_size": {
+      "type": "decimal"
+    },
+    "menu_font_size": {
+      "type": "decimal"
+    },
+    "text_font_size": {
+      "type": "decimal"
+    },
+    "small_text_font_size": {
+      "type": "decimal"
+    }
+  }
+}

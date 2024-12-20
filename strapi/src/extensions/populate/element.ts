@@ -1,0 +1,2 @@
+export const button = { populate: { page: true, background_color: { fields: ['code'] }, text_color: { fields: ['code'] } } }
+export const media = { fields: ['caption', 'width', 'height', 'url', 'alternativeText', 'previewUrl'] }

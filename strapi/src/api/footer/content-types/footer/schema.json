@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Pied de page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "links_groups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.links-group"
+    },
+    "socials": {
+      "displayName": "social",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.social"
+    },
+    "copyrights": {
+      "type": "string"
+    },
+    "above_section": {
+      "displayName": "Above Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.above-section"
+    }
+  }
+}

@@ -11,6 +11,11 @@ const config: Config = {
       fontFamily: {
         sans: ['Inter, sans-serif', { fontFeatureSettings: '"cv11"' }],
       },
+      colors: {
+        "default-body": "var(--text-default-color)",
+        "default-color": "var(--bg-color-button)",
+        "default-font": "var(--text-color-button)",
+      },
     },
   },
   plugins: [],

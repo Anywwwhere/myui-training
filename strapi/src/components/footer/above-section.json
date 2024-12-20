@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_above_sections",
+  "info": {
+    "displayName": "Above Section",
+    "icon": "arrowUp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "contact_blocks": {
+      "displayName": "contact block",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.contact-block"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

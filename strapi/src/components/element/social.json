@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_element_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "twitter"
+  },
+  "options": {},
+  "attributes": {
+    "network": {
+      "type": "enumeration",
+      "enum": [
+        "linkedin",
+        "instagram",
+        "facebook",
+        "x"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

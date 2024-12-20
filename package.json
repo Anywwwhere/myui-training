@@ -1,20 +1,39 @@
 {
-    "scripts": {
-      "ui": "pnpm dev --prefix ../ui/",
-      "strapi": "pnpm dev --prefix ../strapi/",
-      "clear": "cd ui && rm -rf .next && rm -rf cache",
-      "setup:ui": "cd ui && pnpm install",
-      "setup:strapi": "cd strapi && pnpm install",
-      "setup": "pnpm install && pnpm setup:ui && pnpm setup:strapi",
-      "dev": "pnpm clear && concurrently \"cd ui && pnpm dev\" \"cd strapi && pnpm develop\"",
-      "seed": "cd strapi && pnpm strapi import -f ../seed-data.tar.gz",
-      "export": "cd strapi && pnpm strapi export --no-encrypt -f ../seed-data",
-      "repo:upstream": "git fetch upstream && git merge upstream/main",
-      "deploy:strapi": "git subtree push --prefix strapi heroku main",
-      "copytypes": "node copyTypes.js"
+  "name": "arcastock",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Anywwwhere",
+    "email": "contact@anywwwhere.com",
+    "url": "https://anywwwhere.com/"
+  },
+  "maintainers": [
+    {
+      "name": "Florian Dupuis",
+      "email": "florian@anywwwhere.com",
+      "url": "https://github.com/Dupflo/dupflo"
     },
-    "dependencies": {
-      "concurrently": "^8.2.2"
+    {
+      "name": "Mustapha Hamadi",
+      "email": "mustapha.hamadi.dev@gmail.com",
+      "url": "https://github.com/MustaphaHAMADI"
     }
+  ],
+  "scripts": {
+    "ui": "pnpm dev --prefix ../ui/",
+    "strapi": "pnpm dev --prefix ../strapi/",
+    "clear": "cd ui && rm -rf .next && rm -rf cache",
+    "setup:ui": "cd ui && pnpm install",
+    "setup:strapi": "cd strapi && pnpm install",
+    "setup": "pnpm install && pnpm setup:ui && pnpm setup:strapi",
+    "dev": "pnpm clear && concurrently \"cd ui && pnpm dev\" \"cd strapi && pnpm develop\"",
+    "seed": "cd strapi && pnpm strapi import -f ../seed-data.tar.gz",
+    "export": "cd strapi && pnpm strapi export --no-encrypt -f ../seed-data",
+    "repo:upstream": "git fetch upstream && git merge upstream/main",
+    "deploy:strapi": "git subtree push --prefix strapi heroku main",
+    "copytypes": "node copyTypes.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
   }
-  
+}

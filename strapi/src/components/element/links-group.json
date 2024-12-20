@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_element_links_groups",
+  "info": {
+    "displayName": "links group",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
+    }
+  }
+}

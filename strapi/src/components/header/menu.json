@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

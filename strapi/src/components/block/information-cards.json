@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_block_information_cards",
+  "info": {
+    "displayName": "Information Cards",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "info_cards": {
+      "displayName": "info card",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.info-card",
+      "max": 2
+    }
+  }
+}

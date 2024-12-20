@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_block_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "rocket",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.tag"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.images-block"
+    }
+  }
+}

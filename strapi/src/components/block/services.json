@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_block_services",
+  "info": {
+    "displayName": "services",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.service-card",
+      "max": 3,
+      "required": false
+    },
+    "show_reassurance": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

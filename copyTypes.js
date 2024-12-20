@@ -1,15 +1,15 @@
 const fs = require("fs")
 const path = require("path")
 
-const destinationFolder = "frontend/types"
+const destinationFolder = "ui/types"
 
 const files = [
   {
-    src: path.join(__dirname, "./backend/types/generated/contentTypes.d.ts"),
+    src: path.join(__dirname, "./strapi/types/generated/contentTypes.d.ts"),
     dest: path.join(__dirname, `./${destinationFolder}/contentTypes.d.ts`),
   },
   {
-    src: path.join(__dirname, "./backend/types/generated/components.d.ts"),
+    src: path.join(__dirname, "./strapi/types/generated/components.d.ts"),
     dest: path.join(__dirname, `./${destinationFolder}/components.d.ts`),
   },
 ]
